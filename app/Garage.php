@@ -12,8 +12,15 @@ class Garage extends Model
      * @var array
      */
     protected $fillable = [
-        'location', 'capacity'
+        'id', 'location', 'capacity'
     ];
+
+    /**
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = ['created_at', 'updated_at'];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -30,10 +37,7 @@ class Garage extends Model
      * @var array
      */
     protected $casts = [
-        'location' => 'string',
-        'capacity' => 'integer',
-        'created_at' => 'timestamp',
-        'updated_at' => 'timestamp'
+        //
     ];
 
     /**

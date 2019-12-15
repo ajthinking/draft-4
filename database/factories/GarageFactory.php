@@ -20,6 +20,6 @@ use Carbon\Carbon;
 $factory->define(Garage::class, function (Faker $faker) {
     return [
         'location' => $faker->sentence(),
-        'capacity' => random_int(-2147483648, 2147483647)
+        'capacity' => $faker->sentence()
     ];
 });

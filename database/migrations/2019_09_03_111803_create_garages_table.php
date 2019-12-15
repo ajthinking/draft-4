@@ -16,7 +16,7 @@ class CreateGaragesTable extends Migration
         Schema::create('garages', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('location');
-            $table->integer('capacity');
+            $table->string('capacity');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });
